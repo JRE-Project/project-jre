@@ -8,19 +8,19 @@ import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PageNotFoundComponent } from './errors/page-not-found/page-not-found.component';
+import { PagesComponent } from './pages/pages.component';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    SidebarComponent,
-    HomeComponent,
     PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthModule
+    AuthModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
